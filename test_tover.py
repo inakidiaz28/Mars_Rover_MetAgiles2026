@@ -16,6 +16,14 @@ class TestRover(unittest.TestCase):
 
         self.assertEqual(rover.posicion(), (0, 0, "O"))
 
+    def test_gira_a_la_derecha(self):
+        rover = Rover(0, 0, "N")
+
+        rover.girar_derecha()
+
+        self.assertEqual(rover.posicion(), (0, 0, "E"))
+
+
 if __name__ == "__main__":
     unittest.main()
 
