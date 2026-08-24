@@ -12,3 +12,13 @@ class Rover:
         indice_actual = orientaciones.index(self.orientacion)
         nuevo_indice = (indice_actual - 1) % 4
         self.orientacion = orientaciones[nuevo_indice]
+
+    def girar_derecha(self):
+        if self.orientacion == "N":
+            self.orientacion = "E"
+        elif self.orientacion == "E":
+            self.orientacion = "S"
+        elif self.orientacion == "S":
+            self.orientacion = "O"
+        elif self.orientacion == "O":
+            self.orientacion = "N"
