@@ -22,6 +22,13 @@ class TestRover(unittest.TestCase):
         rover.girar_derecha()
 
         self.assertEqual(rover.posicion(), (0, 0, "E"))
+        
+    def test_avanza_una_celda_hacia_el_norte(self):
+        rover = Rover(0, 0, "N")
+    
+        rover.avanzar()
+
+        self.assertEqual(rover.posicion(), (0, 1, "N"))
 
 
 if __name__ == "__main__":
