@@ -22,3 +22,7 @@ class Rover:
     def avanzar(self):
         if self.orientacion == "N":
             self.y += 1
+
+    def retroceder(self):
+        if self.orientacion == "N":
+            self.y -= 1
