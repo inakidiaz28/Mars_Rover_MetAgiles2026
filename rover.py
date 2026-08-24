@@ -8,13 +8,13 @@ class Rover:
         return (self.x, self.y, self.orientacion)
 
     def girar_izquierda(self):
-        orientaciones = ["N", "E", "S", "O"]  # orden horario
+        orientaciones = ["N", "E", "S", "O"]  
         indice_actual = orientaciones.index(self.orientacion)
         nuevo_indice = (indice_actual - 1) % 4
         self.orientacion = orientaciones[nuevo_indice]
 
     def girar_derecha(self):
-        orientaciones = ["N", "E", "S", "O"]  # orden horario
+        orientaciones = ["N", "E", "S", "O"]  
         indice_actual = orientaciones.index(self.orientacion)
         nuevo_indice = (indice_actual + 1) % 4
         self.orientacion = orientaciones[nuevo_indice]
